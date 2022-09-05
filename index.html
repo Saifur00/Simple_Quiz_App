@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="bg-red-400">
+        <div>
+          <h2 class="text-8xl text-cyan-900 py-8 text-center">
+            Simple Quiz App
+          </h2>
+          <div id="output" class="text-7xl text-white pb-8 text-center"></div>
+        </div>
+      </div>
+      <div class="bg-lime-200 h-full">
+        <div class="ml-8 pt-8">
+          <h3 class="text-4xl mb-5">On with the Questions...</h3>
+          <form id="quizes" class="ml-4">
+            <p class="mt-4">Who is the Richest Person in the World:</p>
+            <input
+              type="radio"
+              id="elon"
+              name="richest_man"
+              value="Elon Musk"
+            />
+            <label for="elon">Elon Musk</label><br />
+            <input type="radio" id="adani" name="richest_man" value="Adani" />
+            <label for="adani">Adani</label><br />
+            <input
+              type="radio"
+              id="bezos"
+              name="richest_man"
+              value="Jeff Bezos"
+            />
+            <label for="bezos">Jeff Bezos</label><br />
+            <p class="mt-4">Name the most popular super hero ever:</p>
+            <input
+              type="radio"
+              id="superman"
+              name="super_hero"
+              value="Superman"
+            />
+            <label for="superman">Superman</label><br />
+            <input type="radio" id="batman" name="super_hero" value="Batman" />
+            <label for="batman">Batman</label><br />
+            <input
+              type="radio"
+              id="spidey"
+              name="super_hero"
+              value="Spider-man"
+            />
+            <label for="spidey">Spiderman</label><br />
+            <p class="mt-4">Name the highest earner comic book movie:</p>
+            <input
+              type="radio"
+              id="avengers"
+              name="comic_movie"
+              value="Avengers"
+            />
+            <label for="avengers">Avengers</label><br />
+            <input
+              type="radio"
+              id="justice_league"
+              name="comic_movie"
+              value="Justice League"
+            />
+            <label for="justice_league">Justice League</label><br />
+            <input
+              type="radio"
+              id="spiderman_movie"
+              name="comic_movie"
+              value="Spider-man"
+            />
+            <label for="spiderman_movie">Spiderman</label><br />
+            <div class="flex items-center justify-center">
+              <button
+                class="rounded hover:rounded-lg bg-red-300 p-1.5"
+                type="submit"
+                id="btnSubmit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="Quiz2.js"></script>
+  </body>
+</html>
